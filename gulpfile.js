@@ -4,7 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 function styles(){
-    return gulp.src('./src/style/main.scss')
+    return gulp.src('./src/styles/main.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest('./dist/css'))
     .pipe(cleanCSS())
@@ -13,7 +13,7 @@ function styles(){
 }
 
 function watchFiles(){
-    gulp.watch('.src/styles/**/*.scss', styles);
+    gulp.watch('./src/styles/**/*.scss', styles);
 }
 
 exports.styles = styles;

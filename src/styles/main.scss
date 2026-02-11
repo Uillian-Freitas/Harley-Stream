@@ -1,0 +1,9 @@
+@use 'variaveis';
+@use 'hero';
+
+body {
+  background-color: variaveis.$cor-fundo;
+  color: variaveis.$cor-texto;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}

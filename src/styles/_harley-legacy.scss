@@ -50,3 +50,57 @@
     margin-bottom: 16px;
     line-height: 1.6;
 }
+
+@media (max-width: 767px) {
+
+  .harley-legacy {
+    padding: 48px 20px;     /* reduz respiro lateral e vertical */
+    gap: 32px;              /* 60px → 32px */
+    flex-direction: column; /* garante empilhamento limpo */
+    text-align: center;
+  }
+
+  .harley-legacy__image img {
+    max-width: 320px;       /* controla tamanho no mobile */
+  }
+
+  .harley-legacy__content {
+    max-width: 100%;
+  }
+
+  .harley-legacy__title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  /* ajusta o risco rosa pra não “vazar” */
+  .harley-legacy__title::after {
+    height: 5px;
+    bottom: -6px;
+  }
+
+  .harley-legacy__text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 6px; /* respiro leve nas laterais */
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .harley-legacy {
+    gap: 40px; /* antes 60px */
+    padding: 60px 4vw;
+  }
+
+  .harley-legacy__image img {
+    max-width: 360px;
+  }
+
+  .harley-legacy__content {
+    max-width: 460px;
+  }
+
+}

@@ -7,6 +7,10 @@
 @use 'faq';
 @use 'footer';
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: variaveis.$cor-fundo;
   color: variaveis.$cor-texto;

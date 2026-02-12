@@ -76,3 +76,66 @@ margin-bottom: 32px;
   opacity: 0.9;
   filter: blur(1px);
 }
+
+@media (max-width: 767px) {
+
+  /* ===== TABS VIRAM COLUNA ===== */
+
+  .shows__tabs {
+    flex-direction: column;
+    gap: 12px;              /* reduz o respiro gigante */
+    margin-bottom: 24px;
+  }
+
+  .tab-button {
+    font-size: 14px;        /* reduz tipografia */
+    letter-spacing: 0.5px;
+    width: 100%;            /* ocupa largura total */
+    text-align: center;
+  }
+
+  /* corrige o "risco rosa" pra não estourar */
+  .tab-button.active::after {
+    left: 10%;
+    width: 80%;
+    height: 6px;
+  }
+
+  /* ===== LISTA VIRA 1 COLUNA ===== */
+
+  .shows__list {
+    grid-template-columns: 1fr;   /* 3 → 1 */
+    gap: 16px;
+    justify-items: center;
+  }
+
+  /* ===== IMAGEM FICA FLUIDA ===== */
+
+  .shows__list__item img {
+    width: 100%;
+    max-width: 280px;   /* controla pra não crescer demais */
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .shows__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .shows__list__item img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .shows__tabs {
+    gap: 24px;
+  }
+
+  .tab-button {
+    font-size: 16px;
+  }
+
+}

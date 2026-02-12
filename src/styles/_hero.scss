@@ -66,3 +66,65 @@
   opacity: 0.9;
 }
 
+@media (max-width: 767px) {
+
+  .hero {
+    min-height: auto;              /* para de forçar altura gigante */
+    display: block;                /* desliga o flex cinematográfico */
+  }
+
+  .hero__background {
+    position: relative;            /* volta ao fluxo normal */
+    height: auto;
+  }
+
+  .hero__background img {
+    height: auto;                  /* deixa imagem respirar */
+    object-fit: contain;           /* não corta no mobile */
+  }
+
+  .hero__overlay {
+    display: none;                 /* overlay não faz sentido fora do banner */
+  }
+
+  .hero__content {
+    position: relative;
+    max-width: 100%;
+    padding: 24px 20px 32px;
+    background: #000;              /* cria base pro texto */
+  }
+
+  .hero__content h1 {
+    font-size: 20px;
+  }
+
+  .hero__content p {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .hero {
+    min-height: 60vh; /* antes 100vh era alto demais */
+  }
+
+  .hero__content {
+    max-width: 520px;
+    padding-bottom: 4vh;
+  }
+
+  .hero__content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+

@@ -87,3 +87,53 @@
         margin-top: 18px;
     }
 }}
+
+@media (max-width: 767px) {
+
+  .faq {
+    padding: 48px 20px;   /* reduz área morta */
+  }
+
+  .faq .title {
+    font-size: 22px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+  }
+
+  .faq__list {
+    max-width: 100%;      /* remove limitação desktop */
+  }
+
+  .faq__item {
+    padding: 20px;        /* 28px → mais leve */
+    border-radius: 12px;
+  }
+
+  .faq__question {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .faq__answer {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* animação continua igual, só limita altura pra telas menores */
+  .faq__item--active .faq__answer {
+    max-height: 600px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .faq {
+    padding: 64px 4vw;
+  }
+
+  .faq__item {
+    padding: 24px;
+  }
+
+}

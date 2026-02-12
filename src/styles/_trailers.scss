@@ -117,3 +117,65 @@ filter: blur(1px);
 .video-modal.active {
   display: flex;
 }
+
+@media (max-width: 767px) {
+
+  .trailers {
+    padding: 40px 20px;        /* reduz respiro lateral */
+  }
+
+  .trailers h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+
+  .trailers__grid {
+    gap: 20px;                 /* 32 → 20 */
+  }
+
+  /* card deixa de ser fixo */
+  .trailers__card {
+    width: 100%;
+    max-width: 320px;          /* controla leitura */
+  }
+
+  /* botão play menor */
+  .trailers__play {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  /* ===== MODAL RESPONSIVO ===== */
+
+  .video-modal__content {
+    width: 92%;
+  }
+
+  .video-modal__content iframe {
+    height: 220px;             /* 450px quebrava tudo */
+  }
+
+  .video-modal__close {
+    top: -40px;
+    right: 0;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .trailers__grid {
+    gap: 24px;
+  }
+
+  .trailers__card {
+    width: 240px;
+  }
+
+  .video-modal__content iframe {
+    height: 320px;
+  }
+
+}

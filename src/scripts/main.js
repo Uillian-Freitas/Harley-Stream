@@ -76,6 +76,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+/* ===== CONTROLE DO MENU MOBILE ===== */
+
+const toggleButton = document.querySelector('.header__toggle');
+const mobileNav = document.querySelector('.header__nav');
+
+if (toggleButton) {
+  toggleButton.addEventListener('click', () => {
+    mobileNav.classList.toggle('is-open');
+  });
+}
+
+
+
 
 
 });

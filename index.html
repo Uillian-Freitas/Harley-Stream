@@ -18,6 +18,11 @@
             <h1 >
                 <img class="header__logo" src="./src/images/logo.png" alt="Harley Stream">
             </h1>
+            <button class="header__toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
             <nav class="header__nav">
 
                 <ul class="header__menu">
@@ -34,12 +39,13 @@
     </header>
     <section class="hero" id="hero">
         <div class="hero__background">
+            <picture>
             <source 
             media="(max-width: 767px)"
-            srcset="./src/images/hero-mobile-375w"/>
+            srcset="src/images/hero-mobile-375w.jpg"/>
 
-            <img src="./src/images/hero.jpg.jpg" alt="Várias versões da Harley Quinn reunidas">
-
+            <img src="src/images/hero.jpg.jpg" alt="Várias versões da Harley Quinn reunidas">
+            </picture>
         </div>
 
         <div class="hero__overlay"></div>
@@ -54,6 +60,7 @@
 
         </div>
     </section>
+    
     <section class="shows" id="shows">
   <nav class="shows__tabs">
     <button data-tab="filmes" class="tab-button active">

@@ -54,14 +54,14 @@
 @media (max-width: 767px) {
 
   .harley-legacy {
-    padding: 48px 20px;     /* reduz respiro lateral e vertical */
-    gap: 32px;              /* 60px → 32px */
-    flex-direction: column; /* garante empilhamento limpo */
+    padding: 48px 20px;     
+    gap: 32px;              
+    flex-direction: column; 
     text-align: center;
   }
 
   .harley-legacy__image img {
-    max-width: 320px;       /* controla tamanho no mobile */
+    max-width: 320px;       
   }
 
   .harley-legacy__content {
@@ -74,7 +74,7 @@
     margin-bottom: 20px;
   }
 
-  /* ajusta o risco rosa pra não “vazar” */
+ 
   .harley-legacy__title::after {
     height: 5px;
     bottom: -6px;
@@ -83,7 +83,7 @@
   .harley-legacy__text {
     font-size: 15px;
     line-height: 1.5;
-    padding: 0 6px; /* respiro leve nas laterais */
+    padding: 0 6px; 
   }
 
 }
@@ -91,7 +91,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .harley-legacy {
-    gap: 40px; /* antes 60px */
+    gap: 40px; 
     padding: 60px 4vw;
   }
 

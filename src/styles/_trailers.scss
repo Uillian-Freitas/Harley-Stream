@@ -121,7 +121,7 @@ filter: blur(1px);
 @media (max-width: 767px) {
 
   .trailers {
-    padding: 40px 20px;        /* reduz respiro lateral */
+    padding: 40px 20px;        
   }
 
   .trailers h2 {
@@ -131,30 +131,30 @@ filter: blur(1px);
   }
 
   .trailers__grid {
-    gap: 20px;                 /* 32 → 20 */
+    gap: 20px;                 
   }
 
-  /* card deixa de ser fixo */
+  
   .trailers__card {
     width: 100%;
-    max-width: 320px;          /* controla leitura */
+    max-width: 320px;          
   }
 
-  /* botão play menor */
+  
   .trailers__play {
     width: 48px;
     height: 48px;
     font-size: 18px;
   }
 
-  /* ===== MODAL RESPONSIVO ===== */
+  
 
   .video-modal__content {
     width: 92%;
   }
 
   .video-modal__content iframe {
-    height: 220px;             /* 450px quebrava tudo */
+    height: 220px;             
   }
 
   .video-modal__close {

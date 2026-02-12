@@ -91,22 +91,22 @@
     border-radius: 2px;
 }
 
-/* ===== MOBILE ===== */
+
 
 @media (max-width: 767px) {
 
-    /* mostra botão */
+    
     .header__toggle {
         display: block;
         z-index: 1100;
     }
 
-    /* esconde menu horizontal original */
+    
     .header__menu {
         display: none;
     }
 
-    /* transforma o nav em painel fullscreen */
+    
     .header__nav {
         position: fixed;
         top: 0;
@@ -124,13 +124,13 @@
         transition: opacity 0.3s ease;
     }
 
-    /* quando abre */
+    
     .header__nav.is-open {
         opacity: 1;
         pointer-events: auto;
     }
 
-    /* agora o menu aparece VERTICAL */
+    
     .header__nav.is-open .header__menu {
         display: flex;
         flex-direction: column;

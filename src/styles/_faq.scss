@@ -91,7 +91,7 @@
 @media (max-width: 767px) {
 
   .faq {
-    padding: 48px 20px;   /* reduz área morta */
+    padding: 48px 20px;   
   }
 
   .faq .title {
@@ -101,11 +101,11 @@
   }
 
   .faq__list {
-    max-width: 100%;      /* remove limitação desktop */
+    max-width: 100%;      
   }
 
   .faq__item {
-    padding: 20px;        /* 28px → mais leve */
+    padding: 20px;        
     border-radius: 12px;
   }
 
@@ -119,7 +119,7 @@
     line-height: 1.5;
   }
 
-  /* animação continua igual, só limita altura pra telas menores */
+  
   .faq__item--active .faq__answer {
     max-height: 600px;
   }

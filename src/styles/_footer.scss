@@ -1,0 +1,32 @@
+.footer {
+  padding: 4px 5.6vw;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #ff2f92,
+    #6a00ff,
+    #00e5ff
+  );
+
+  color: #fff;
+}
+
+.footer__title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer__text {
+  font-size: 10px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.footer__copy {
+  font-size: 10px;
+  opacity: 0.8;
+}

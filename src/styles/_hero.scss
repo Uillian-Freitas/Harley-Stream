@@ -5,12 +5,12 @@
   min-height: 100vh;
   overflow: hidden;
 
-  /* 🔥 ISSO É O QUE FIXA O CONTEÚDO EMBAIXO */
+  
   display: flex;
   align-items: flex-end;
 }
 
-/* BACKGROUND */
+
 .hero__background {
   position: absolute;
   inset: 0;
@@ -23,7 +23,7 @@
   object-fit: cover;
 }
 
-/* OVERLAY */
+
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -36,7 +36,7 @@
   );
 }
 
-/* CONTEÚDO */
+
 .hero__content {
   position: relative;
   z-index: 2;
@@ -44,13 +44,13 @@
   width: 100%;
   max-width: 640px;
 
-  /* 🔥 COLADO NA BORDA */
+
   padding: 0 5.6vw 6vh;
 
   color: #fff;
 }
 
-/* TEXTO */
+
 .hero__content h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -66,22 +66,3 @@
   opacity: 0.9;
 }
 
-/* BOTÃO */
-.hero__cta {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 4px;
-
-  background: #e50914;
-  color: #fff;
-
-  font-weight: 700;
-  text-decoration: none;
-
-  transition: transform 0.2s ease, background 0.2s ease;
-
-  &:hover {
-    background: #ff1e2d;
-    transform: scale(1.03);
-  }
-}

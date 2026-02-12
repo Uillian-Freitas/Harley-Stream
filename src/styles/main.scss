@@ -1,5 +1,11 @@
 @use 'variaveis';
+@use 'header';
 @use 'hero';
+@use 'shows';
+@use 'trailers';
+@use 'harley-legacy';
+@use 'faq';
+@use 'footer';
 
 body {
   background-color: variaveis.$cor-fundo;
